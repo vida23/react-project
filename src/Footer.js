@@ -1,8 +1,17 @@
-const Footer = () => {
-    const year = new Date().getFullYear();
-  
-    return <footer>{`Copyright © Vida Rashidi ${year}`}</footer>;
+import React from "react";
 
-  };
-  
-  export default Footer;
+const Footer = () => {
+  const year = new Date().getFullYear();
+
+  return (
+    <footer className="footer">
+      <div class="content has-text-centered">
+        {`Copyright © Vida Rashidi ${year}`}
+      </div>
+
+    </footer>
+
+
+  )
+};
+export default Footer;
